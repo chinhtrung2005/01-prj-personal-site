@@ -6,20 +6,32 @@
   <title>My Personal Website</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body id="top">
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <h1>My Portfolio</h1>
-        <p>Web development student building projects with HTML and CSS</p>
+        <p>Web development student building projects</p>
       </div>
       <nav class="site-nav">
-        <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#top" class="home-link">
+          <img src="img/home.png" alt="Home" class="nav-icon" />
+          <span class="home-text">Home</span>
+        </a>
+        <a href="#about" class="icon-link about-link">
+          <img src="img/person.png" alt="About" class="nav-icon" />
+          <span class="link-text">About</span>
+        </a>
+        <a href="#skills" class="icon-link skills-link">
+          <img src="img/object.png" alt="Skills" class="nav-icon" />
+          <span class="link-text">Skills</span>
+        </a>
+        <a href="#contact" class="icon-link contact-link">
+          <img src="img/call.png" alt="Contact" class="nav-icon" />
+          <span class="link-text">Contact</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -30,7 +42,7 @@
         <div>
           <p class="eyebrow">Hello, I’m</p>
           <h2>Cao Trung Chinh Vo</h2>
-          <p>I am a web development student creating clean, modern websites while learning HTML and CSS. I enjoy building responsive pages, learning new tools, and sharing project ideas.</p>
+          <p>I am a web development student creating websites while learning HTML and CSS. I enjoy building responsive pages, learning new tools, and sharing project ideas.</p>
           <a class="button" href="#projects">View Projects</a>
         </div>
         <div class="photo-card">
@@ -43,9 +55,16 @@
       <div class="container section-inner">
         <div class="section-title">
           <h3>About Me</h3>
-          <p>Learn more about my goals and what I enjoy building.</p>
+          
+          <p>My Birthday: 10/03/2005<br>
+          My favorite song is: Ghe Qua</p>
+          <p>My hobby are</p>
+          <ul>
+            <li>Hunting</li>
+            <li>Fishing</li>
+            <li>Playing guitar</li>
+          </ul>
         </div>
-        <p>Hi! My name is Trung Chinh. I am a web development student working on portfolio projects for my college course. I enjoy building clean, beginner-friendly websites and learning the basics of HTML and CSS. My goal is to create designs that look modern and are easy to update as I learn more.</p>
       </div>
     </section>
 
@@ -68,8 +87,8 @@
           </div>
           <div class="skill-item">
             <span class="material-symbols-outlined skill-icon">devices</span>
-            <h4>Responsive Design</h4>
-            <p>Make websites look good on phones, tablets, and desktops.</p>
+            <h4>Javascript</h4>
+            <p>Make websites interactive with scripts and web behavior.</p>
           </div>
         </div>
       </div>
@@ -79,12 +98,11 @@
       <div class="container section-inner">
         <div class="section-title">
           <h3>Projects</h3>
-          <p>Portfolio examples that show what I am working on.</p>
         </div>
         <div class="project-list">
           <article class="project-card">
             <h4>Project One</h4>
-            <p>A simple landing page to practice layout and typography.</p>
+            <p>A simple song with lyrics.</p>
           </article>
           <article class="project-card">
             <h4>Project Two</h4>
@@ -92,7 +110,7 @@
           </article>
           <article class="project-card">
             <h4>Project Three</h4>
-            <p>A small website with navigation, sections, and contact details.</p>
+            <p>A small website.</p>
           </article>
         </div>
       </div>
@@ -100,17 +118,21 @@
 
     <section id="contact" class="section-white">
       <div class="container section-inner contact-section">
-        <div class="section-title">
-          <h3>Contact</h3>
-          <p>My contact details are below.</p>
-        </div>
         <div class="contact-details">
           <h4>My Contact:</h4>
           <ul>
             <li>Phone: 336-929-4329</li>
             <li>Facebook: <a href="https://www.facebook.com/Trungchinh2005" target="_blank">Trung Chinh</a></li>
             <li>Email: <a href="mailto:chinhtrung2005@gmail.com" target="_blank">chinhtrung2005@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/cao-trung-chinh-vo-aa4b78359/" target="_blank">linkedin.com/in/cao-trung-chinh-vo-aa4b78359/</a></li>
           </ul>
+          <div class="question-form">
+            <label>
+              <h2>Do you have any question for me?</h2>
+            </label>
+            <input type="text" placeholder="Ask question" />
+            <button class="small-button">Send question</button>
+          </div>
         </div>
       </div>
     </section>
