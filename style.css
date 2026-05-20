@@ -1,1 +1,239 @@
-/* Add you CSS here */
+:root {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f5f7;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d8dde4;
+}
+
+.header-inner,
+.hero-content,
+.section-inner,
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 24px 0;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.brand p {
+  margin: 8px 0 0;
+  color: #555;
+}
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  color: #1a73e8;
+}
+
+.skill-icon {
+  display: inline-block;
+  font-size: 2rem;
+  color: #1a73e8;
+  margin-bottom: 12px;
+}
+
+.hero {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.hero-content {
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #7a7f8b;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  margin: 0 0 16px;
+  font-size: 2.4rem;
+}
+
+.hero p {
+  max-width: 560px;
+  margin: 0 0 24px;
+  color: #4a4f5d;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1a73e8;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: 2px solid #1a73e8;
+  color: #1a73e8;
+}
+
+.photo-card {
+  width: 220px;
+  height: 220px;
+  background-color: #dfe7f5;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-text {
+  color: #5a6478;
+  font-weight: 700;
+}
+
+.section-light {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.section-white {
+  background-color: #f4f5f7;
+  padding: 40px 0;
+}
+
+.section-title h3 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+}
+
+.section-title p {
+  margin: 0;
+  color: #5a5f6f;
+}
+
+.section-inner p {
+  max-width: 680px;
+  color: #555;
+}
+
+.contact-details ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.contact-details li {
+  margin-bottom: 8px;
+}
+
+.contact-details a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.skill-list,
+.project-list {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.skill-item,
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #d8dde4;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.skill-item h4,
+.project-card h4 {
+  margin: 0 0 10px;
+}
+
+.site-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #d8dde4;
+}
+
+.footer-inner {
+  justify-content: center;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #6d7380;
+}
+
+@media (max-width: 720px) {
+  .header-inner,
+  .hero-content,
+  .section-inner,
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .photo-card {
+    width: 100%;
+    height: 180px;
+  }
+}
