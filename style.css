@@ -397,6 +397,17 @@ section {
   line-height: 1.75;
 }
 
+.project-card a {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
 .contact-details {
   background-color: transparent;
   border: none;
